@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-03-10T15:36:25.964834Z",
+  "generated_at": "2026-03-10T17:01:34.880996Z",
   "sites": [
     {
       "site_id": "techurls",
       "site_name": "TechURLs",
       "ok": true,
       "item_count": 405,
-      "duration_ms": 486,
+      "duration_ms": 468,
       "error": null
     },
     {
@@ -14,15 +14,15 @@
       "site_name": "Buzzing",
       "ok": true,
       "item_count": 744,
-      "duration_ms": 1047,
+      "duration_ms": 442,
       "error": null
     },
     {
       "site_id": "iris",
       "site_name": "Info Flow",
       "ok": true,
-      "item_count": 530,
-      "duration_ms": 16060,
+      "item_count": 352,
+      "duration_ms": 16869,
       "error": null
     },
     {
@@ -30,31 +30,31 @@
       "site_name": "BestBlogs",
       "ok": true,
       "item_count": 85,
-      "duration_ms": 1984,
+      "duration_ms": 2036,
       "error": null
     },
     {
       "site_id": "tophub",
       "site_name": "TopHub",
       "ok": true,
-      "item_count": 3039,
-      "duration_ms": 1807,
+      "item_count": 3038,
+      "duration_ms": 2272,
       "error": null
     },
     {
       "site_id": "zeli",
       "site_name": "Zeli",
-      "ok": false,
-      "item_count": 0,
-      "duration_ms": 71463,
-      "error": "HTTPSConnectionPool(host='zeli.app', port=443): Read timed out."
+      "ok": true,
+      "item_count": 72,
+      "duration_ms": 1063,
+      "error": null
     },
     {
       "site_id": "aihubtoday",
       "site_name": "AI HubToday",
       "ok": true,
       "item_count": 1,
-      "duration_ms": 550,
+      "duration_ms": 295,
       "error": null
     },
     {
@@ -62,7 +62,7 @@
       "site_name": "AIbase",
       "ok": true,
       "item_count": 20,
-      "duration_ms": 1211,
+      "duration_ms": 1604,
       "error": null
     },
     {
@@ -70,7 +70,7 @@
       "site_name": "AI今日热榜",
       "ok": false,
       "item_count": 0,
-      "duration_ms": 384,
+      "duration_ms": 199,
       "error": "403 Client Error: Forbidden for url: https://aihot.today/"
     },
     {
@@ -78,19 +78,18 @@
       "site_name": "NewsNow",
       "ok": true,
       "item_count": 143,
-      "duration_ms": 1515,
+      "duration_ms": 584,
       "error": null
     }
   ],
-  "successful_sites": 8,
+  "successful_sites": 9,
   "failed_sites": [
-    "zeli",
     "aihot"
   ],
   "zero_item_sites": [],
-  "fetched_raw_items": 4967,
-  "items_before_topic_filter": 8685,
-  "items_in_24h": 1022,
+  "fetched_raw_items": 4860,
+  "items_before_topic_filter": 8617,
+  "items_in_24h": 1023,
   "rss_opml": {
     "enabled": false,
     "path": null,
