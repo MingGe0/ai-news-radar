@@ -39,6 +39,7 @@ WAYTOAGI_DEFAULT = (
     "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview"
 )
 WAYTOAGI_HISTORY_FALLBACK = "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc"
+DEFAULT_ARCHIVE_DAYS = 14
 
 RSS_FEED_REPLACEMENTS: dict[str, str] = {
     "https://rsshub.app/infoq/recommend": "https://www.infoq.cn/feed",
@@ -2027,7 +2028,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Aggregate AI news updates from multiple sources")
     parser.add_argument("--output-dir", default="data", help="Directory for output JSON files")
     parser.add_argument("--window-hours", type=int, default=24, help="24h window size")
-    parser.add_argument("--archive-days", type=int, default=45, help="Keep archive for N days")
+    parser.add_argument("--archive-days", type=int, default=DEFAULT_ARCHIVE_DAYS, help="Keep archive for N days")
     parser.add_argument("--translate-max-new", type=int, default=80, help="Max new EN->ZH title translations per run")
     parser.add_argument("--rss-opml", default="", help="Optional OPML file path to include RSS sources")
     parser.add_argument("--rss-max-feeds", type=int, default=0, help="Optional max OPML RSS feeds to fetch (0 means all)")

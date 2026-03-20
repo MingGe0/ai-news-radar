@@ -3,10 +3,20 @@ from datetime import datetime, timezone
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from scripts.update_news import make_item_id, normalize_url, parse_date_any, parse_opml_subscriptions, parse_relative_time_zh
+from scripts.update_news import (
+    DEFAULT_ARCHIVE_DAYS,
+    make_item_id,
+    normalize_url,
+    parse_date_any,
+    parse_opml_subscriptions,
+    parse_relative_time_zh,
+)
 
 
 class UtilsTests(unittest.TestCase):
+    def test_default_archive_days(self):
+        self.assertEqual(DEFAULT_ARCHIVE_DAYS, 14)
+
     def test_normalize_url_removes_tracking(self):
         raw = "https://example.com/path?a=1&utm_source=x&fbclid=abc"
         self.assertEqual(normalize_url(raw), "https://example.com/path?a=1")
